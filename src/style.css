@@ -1,0 +1,13 @@
+::-moz-selection {
+  color: transparent;
+  background: transparent;
+}
+
+::selection {
+  color: transparent;
+  background: transparent;
+}
+
+div {
+  @apply bg-red;
+}

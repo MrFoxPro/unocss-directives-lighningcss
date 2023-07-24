@@ -1,0 +1,36 @@
+{
+  "name": "unocss-lighningcss",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./dist/my-element.es.js"
+  },
+  "main": "dist/my-element.es.js",
+  "types": "types/my-element.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "lit": "^2.7.6"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "^1.1.33",
+    "@unocss/core": "latest",
+    "@unocss/preset-attributify": "latest",
+    "@unocss/preset-icons": "latest",
+    "lightningcss": "^1.21.5",
+    "napi-wasm": "^1.1.0",
+    "typescript": "^5.1.6",
+    "unocss": "latest",
+    "vite": "^4.4.2",
+    "vite-plugin-inspect": "^0.7.32"
+  },
+  "stackblitz": {
+    "installDependencies": false,
+    "startCommand": "node .stackblitz.mjs && npm install && npm run dev"
+  }
+}
